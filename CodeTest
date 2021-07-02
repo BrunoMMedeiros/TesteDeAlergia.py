@@ -1,0 +1,27 @@
+import numpy as np
+
+# AlergiaAlimentar = np.array(['urticarias', 'diarreia', 'vomitos'])
+# AlergiaDePele = np.array(['dermatite', 'inchaco_da_pele', 'vermelhidao'])
+# AlergiaRespiratória = np.array(['sinusite', 'Rinite', 'bronquite'])
+
+foodAllergy = np.array(['hives', 'diarrhea', 'vomiting'])
+skinAllergy = np.array(['dermatitis', 'swelling_of_the_skin', 'redness'])
+respiratoryAllergy = np.array(['sinusitis', 'rhinitis', 'bronchitis'])
+
+print("-------ALLERGY TEST-------")
+
+symptom1 = input("\nEnter your symptom : ")
+symptom2 = input("\nEnter your symptom : ")
+symptom3 = input("\nEnter your symptom : ")
+
+if symptom1 in foodAllergy and symptom2 in foodAllergy and symptom3 in foodAllergy:
+    print("\nYou have a food allergy")
+
+elif symptom1 in skinAllergy and symptom2 in skinAllergy and symptom3 in skinAllergy:
+    print("\nYou have a Skin allergy")
+
+elif symptom1 in respiratoryAllergy and symptom2 in respiratoryAllergy and symptom3 in respiratoryAllergy:
+    print("\nYou have a respiratory allergy")
+
+else:
+    print("\nUnknown symptoms")
